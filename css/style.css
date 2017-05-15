@@ -1,0 +1,192 @@
+body {
+    font-size: .8em;
+    font-family: Verdana;
+}
+
+table, tr, th, td {
+    border: 1px solid #cccccc;
+    empty-cells: show;
+    border-collapse: collapse;
+     padding: 2px 10px;
+}
+
+table {
+    width: 50%;
+}
+
+th {
+    font-weight: 800;
+}
+
+tr:nth-child(even) {
+    background: rgba(38, 44, 255, 0.25);
+}
+
+tr:nth-child(odd) {
+    background: #f8f8f8;
+}
+
+tr:hover {
+    background: rgba(253, 220, 24, 0.38);
+    cursor: pointer;
+}
+
+div {
+    margin-bottom: 25px;
+}
+
+#accion {
+    width: 10%;
+    cursor: pointer;
+    height: 50px;
+    padding: 15px;
+}
+
+#formulario, #procesando {
+    display: none;
+    height: 50px;
+    padding: 15px;
+}
+
+#procesando {
+    background-image: url('../img/ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 20px;
+    text-indent: 3%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    background-color: #fff;
+    width: 22%;
+    margin: 10% 30%;
+    z-index: 9999;
+    background-color: #fff;
+    color: blue;
+    font-weight: 900;
+    border: 1px solid blue;
+}
+
+.icono {
+    padding-right: 5px;
+    width: 16px;
+    cursor: pointer
+}
+
+.inactivo {
+    background-color: #e7e7e7;
+    border: 1px solid #b7b0b0;
+}
+
+input, textarea, select, button {
+    border: 1px solid #b7b0b0;
+}
+
+textarea {
+    vertical-align: top;
+    width: 250px;
+}
+
+label {
+    clear: both;
+    float: left;
+    padding: 5px;
+}
+
+input[type=submit], input[type=reset] {
+    cursor: pointer;
+}
+
+label[for=cuerpo], input[type=submit], input[type=reset] {
+    clear: both;
+    float: none;
+}
+
+input, select {
+    float: left;
+}
+
+input[type=text]:focus:not(.inactivo),
+input[type=date]:focus:not(.inactivo),
+textarea:focus:not(.inactivo) {
+    background-color: rgba(255, 241, 12, 0.45);
+}
+
+#cuerpo {
+    width: 50%;
+    height: 80px
+}
+
+#titulo {
+    width: 15%;
+}
+
+#fecha {
+    width: 10%;
+}
+
+.invalidDescativo {
+    box-shadow: none;
+}
+
+#tabs {
+    width: auto;
+}
+
+#tbPendiente, #tbProgreso, #tbCompleta {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.pendiente {
+    background-color: red;
+    color: #fff;
+}
+
+.proceso {
+    background-color: yellow;
+}
+
+.completa {
+    background-color: green;
+    color: #fff;
+}
+
+th:first-child, th:last-child {
+    width: 3%;
+}
+
+th:nth-child(2) {
+    width: 25%;
+}
+
+th:nth-child(3) {
+    width: 35%;
+}
+
+th:nth-child(5), th:nth-child(4) {
+    width: 8%;
+}
+
+#mensaje{
+    width: 80%;
+    margin: 0 10%;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+}
+.error {
+    border: 1px solid #FF0511;
+    background-color: rgb(249, 202, 212);
+    color: #99071b;
+}
+.ok {
+    border: 1px solid #2eb906;
+    background-color: rgb(221, 255, 204);
+    color: #235429;
+}
