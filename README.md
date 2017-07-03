@@ -7,4 +7,4 @@ La agenda recoge lista de tareas pendientes, en progreso y completadas.
 El acceso a datos se hace usando tecnología Ajax y Php, manejando los registros 
 de una base de datos SQLite
 
-en github desktop. hacer pull
+
